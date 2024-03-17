@@ -4,14 +4,14 @@ from math import sqrt
 	
 app = Flask(__name__)
 
-# # Distances of libraries from homes										
+# # Distances of libraries from homes # #									
 distncs_1 = {'Kirjastokukkula 1': 1.1, 'Lainalaakso 2': 2.5, 'Niteenneva 3':3.3} 
 distncs_2 = {'Kirjastokukkula 1':9.4, 'Lainalaakso 2':7.4, 'Niteenneva 3':8.0} 
 distncs_3 = {'Kirjastokukkula 1':5.0, 'Lainalaakso 2':0.5, 'Niteenneva 3':5.2}			
 					
 distances_by_address = {'Pulkkamäki 7':distncs_1, 'Kahvilanrotko 8':distncs_2, 'Syöksykierre 9':distncs_3}
-															
-# # Library addresses where the searched material is found
+										
+# # Library addresses where the searched material is found # #
 lib_addresses = ['Kirjastokukkula 1', 'Lainalaakso 2', 'Niteenneva 3']						
 
 @app.route("/search")
