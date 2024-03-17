@@ -1,0 +1,15 @@
+Hakutulokset genrestä {{ genre }}
+<p>
+formaatilla
+<ul>			
+{% for formaatti in formaatti %}
+<li> {{ formaatti }}
+{% endfor %}
+</ul>
+Kirja
+{{ message1 }}
+löytyy kirjastosta
+{{ lib_addresses[0] }}, jonka etäisyys osoitteesta <br>
+{{ message2 }} on
+{{ distances_by_address[message2][lib_addresses[0]] }} km		
+						
